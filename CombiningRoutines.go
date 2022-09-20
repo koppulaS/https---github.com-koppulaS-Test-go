@@ -6,7 +6,8 @@ import (
 )
 
 func main() {
-	letter, number := make(chan bool), make(chan bool)
+	letter := make(chan bool)
+	number:=make(chan bool)
 
 	wg := sync.WaitGroup{}
 	go func() {
