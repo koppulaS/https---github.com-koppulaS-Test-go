@@ -23,16 +23,16 @@ func WelcomeScreen() {
 	fmt.Println("1. login")
 	fmt.Println("2. create new account")
 	fmt.Println("3. quit")
-	fmt.Scanf("%d", &choice)
+	fmt.Scan(&choice)
 	var userid int32
 	var password int32
 	switch choice {
 	case 1:
 
-		fmt.Println("please enter userid : ")
-		fmt.Scanf("%d", &userid)
-		fmt.Println("please enter password /n:")
-		fmt.Scanf("%d", &password)
+		fmt.Println("please enter userid  : ")
+		fmt.Scan(&userid)
+		fmt.Println("please enter password :")
+		fmt.Scan(&password)
 
 		if userid == a.UserId && password == a.Password {
 
@@ -44,6 +44,7 @@ func WelcomeScreen() {
 		} else {
 			fmt.Println("userid & Password did not match, please try again")
 		}
+		//	WelcomeScreen()
 
 	}
 }
